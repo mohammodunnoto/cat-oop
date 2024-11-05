@@ -1,3 +1,4 @@
+import os
 class Cat:
     # the constructor
     # the constructor will create a cat for us in code
@@ -14,18 +15,35 @@ class Cat:
         self.weight = 5
 
     def train(self):
+        os.system("clear")
         print(f"{self.name} had a great time and learned a new trick!")
         self.energy -= 5
         self.intelligence += 1
         self.age += 0.1
 
     def feed(self):
+        os.system("clear")
         print(f"{self.name} has eaten a big meal!")
         self.energy += 10
         self.weight += 1
         self.age += 0.1
 
     def play(self):
+        os.system("clear")
         print(f"{self.name} is playing with you! It is having a lot of fun!")
         self.energy -= 5
         self.age += 0.1
+
+    def sleep(self):
+        os.system("clear")
+        print(f"{self.name} is having a nap.")
+        self.energy += 20
+        self.age += 0.1
+
+    def stats(self):
+        os.system("clear")
+        print(f"""These are {self.name}'s stats.
+    Age: {self.age}
+    Energy: {self.energy}
+    Intelligence: {self.intelligence}
+    Weight: {self.weight}""")
