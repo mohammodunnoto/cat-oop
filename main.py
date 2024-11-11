@@ -1,7 +1,9 @@
 from cat import Cat
+from pyfiglet import Figlet
 import os
 os.system("clear")
-print("Welcome to my cat game!")
+j = Figlet(font='doom')
+print(j.renderText("Welcome to my cat game!"))
 
 name = input("Enter a name for your cat:\n")
 colour = input("Enter a colour for your cat:\n")
