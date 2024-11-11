@@ -1,5 +1,6 @@
 from cat import Cat
-
+import os
+os.system("clear")
 print("Welcome to my cat game!")
 
 name = input("Enter a name for your cat:\n")
